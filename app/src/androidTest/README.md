@@ -1,13 +1,18 @@
 # UI Tests with Espresso for Easy Sound Recorder 
 
+<p>This project provides tests for below test cases:</p>
+                                             
+- User should be notified when recording starts
+- User should be notified when recording ends
+
 ## Test Cases
 
 - User can start recording
 - User can stop recording
 
 - User should see the chronometer's increment
-- User should be notified when recording starts
-- User should be notified when recording ends
+- **User should be notified when recording starts**
+- **User should be notified when recording ends**
 
 - User can share a recorded sound file
 - User can rename a recorded sound file
