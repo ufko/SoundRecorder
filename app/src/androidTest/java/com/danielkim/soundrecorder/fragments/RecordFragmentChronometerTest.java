@@ -6,6 +6,7 @@ import android.text.format.DateUtils;
 
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.activities.MainActivity;
+import com.danielkim.soundrecorder.idling.ChronometerIdlingResource;
 
 import org.junit.Rule;
 
