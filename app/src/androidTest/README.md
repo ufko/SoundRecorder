@@ -5,6 +5,7 @@
 - User should be notified when recording starts
 - User should be notified when recording ends
 - User should see the chronometer's increment
+- User should see licence information when about is tapped in settings menu
 
 ## Test Cases
 
@@ -29,7 +30,7 @@
 - User should see settings menu when main menu is tapped
 - User can enable high quality recording from settings menu
 - User can disable high quality recording from settings menu
-- User should see licence information when about is tapped in settings menu
+- **User should see licence information when about is tapped in settings menu**
 
 - User can press back button to return to the main screen from the settings screen
 - User can press navigate up button to return to the main screen from the settings screen
