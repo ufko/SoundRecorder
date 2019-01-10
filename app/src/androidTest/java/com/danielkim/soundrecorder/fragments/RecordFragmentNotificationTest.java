@@ -1,15 +1,14 @@
 package com.danielkim.soundrecorder.fragments;
 
-import android.content.Context;
 import android.content.Intent;
 import android.test.AndroidTestCase;
 
 import com.danielkim.soundrecorder.R;
 import com.danielkim.soundrecorder.activities.MainActivity;
+import com.danielkim.soundrecorder.util.ResourceUtils;
 
 import org.junit.Rule;
 
-import androidx.test.platform.app.InstrumentationRegistry;
 import androidx.test.rule.ActivityTestRule;
 
 import static androidx.test.espresso.Espresso.onView;
@@ -48,12 +47,6 @@ public class RecordFragmentNotificationTest extends AndroidTestCase {
     public void testFinishNotificationDisplayedWhenRecordButtonTappedTwice() {
         onView(withId(R.id.btnRecord)).perform(click());
         onView(withId(R.id.btnRecord)).perform(click());
-        onView(withText(containsString(getString(R.string.toast_recording_finish)))).inRoot(withDecorView(not(activity.getWindow().getDecorView()))).check(matches(isDisplayed()));
-    }
-
-    private String getString(int id) {
-        Context targetContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        return targetContext.getResources().getString(id);
-
+        onView(withText(containsString(ResourceUtils.getString(R.string.toast_recording_finish)))).inRoot(withDecorView(not(activity.getWindow().getDecorView()))).check(matches(isDisplayed()));
     }
 }
