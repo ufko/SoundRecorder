@@ -1,4 +1,4 @@
-package com.danielkim.soundrecorder.fragments;
+package com.danielkim.soundrecorder.idling;
 
 import androidx.test.espresso.IdlingResource;
 
@@ -7,7 +7,7 @@ public class ChronometerIdlingResource implements IdlingResource {
     private final long startTime;
     private final long recordingTime;
 
-    ChronometerIdlingResource(long recordingTime) {
+    public ChronometerIdlingResource(long recordingTime) {
         this.startTime = System.currentTimeMillis();
         this.recordingTime = recordingTime;
     }
