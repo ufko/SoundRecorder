@@ -4,13 +4,14 @@
                                              
 - User should be notified when recording starts
 - User should be notified when recording ends
+- User should see the chronometer's increment
 
 ## Test Cases
 
 - User can start recording
 - User can stop recording
 
-- User should see the chronometer's increment
+- **User should see the chronometer's increment**
 - **User should be notified when recording starts**
 - **User should be notified when recording ends**
 
